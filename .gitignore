@@ -38,6 +38,7 @@ proguard/
 captures/
 
 # IntelliJ
+.idea
 *.iml
 .idea/workspace.xml
 .idea/tasks.xml
@@ -86,6 +87,9 @@ lint/tmp/
 ### Android Patch ###
 gen-external-apklibs
 output.json
+
+#Gradle files
+.gradle
 
 # End of https://www.gitignore.io/api/android
 
