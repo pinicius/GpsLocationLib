@@ -39,6 +39,8 @@ class CustomLocationClient(context: AppCompatActivity, locationChangeListener: O
 
                 if (isBetterLocation(newLocation, currentBestLocation)) {
                     locationChangeListener.onLocationChanged(newLocation)
+                    currentBestLocation = newLocation
+
                 }
             }
 
