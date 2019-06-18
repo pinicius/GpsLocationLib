@@ -16,7 +16,7 @@ interface OnLocationChangeListener {
 private const val ONE_MINUTE: Long = 1000 * 60
 private const val TWO_MINUTES: Long = 1000 * 60 * 2
 
-class CustomLocationClient(context: AppCompatActivity, locationChangeListener: OnLocationChangeListener) :
+class CustomLocationClient(context: Context, locationChangeListener: OnLocationChangeListener) :
     ICustomLocationClient {
 
     private var locationManager : LocationManager = context.getSystemService(Context.LOCATION_SERVICE) as LocationManager
